@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx 
+	xmlns="http://www.topografix.com/GPX/1/1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+	version="1.1"
+	creator="gpx-poi.com">
+	
+	<wpt lat="30.035843" lon="31.200134">
+		<time>2016-07-20T00:00:00Z</time>
+	</wpt>
+	
+	<wpt lat="30.035992" lon="31.200750">
+		<time>2016-07-20T00:00:05Z</time>
+	</wpt>
+	
+	<wpt lat="30.035992" lon="31.200750">
+		<time>2016-07-20T00:00:10Z</time>
+	</wpt>
+	
+	<wpt lat="30.036294" lon="31.202779">
+		<time>2016-07-20T00:00:15Z</time>
+	</wpt>
+	
+	<wpt lat="30.036577" lon="31.203953">
+		<time>2016-07-20T00:00:20Z</time>
+	</wpt>
+	
+	<wpt lat="30.036898" lon="31.205434">
+		<time>2016-07-20T00:00:25Z</time>
+	</wpt>
+	
+	<wpt lat="30.037251" lon="31.206968">
+		<time>2016-07-20T00:00:30Z</time>
+	</wpt>
+	
+	<wpt lat="30.037757" lon="31.209296">
+		<time>2016-07-20T00:00:35Z</time>
+	</wpt>
+	
+	<wpt lat="30.038161" lon="31.211123">
+		<time>2016-07-20T00:00:40Z</time>
+	</wpt>
+	
+	<wpt lat="30.038635" lon="31.213395">
+		<time>2016-07-20T00:00:45Z</time>
+	</wpt>
+	
+	<wpt lat="30.039062" lon="31.215562">
+		<time>2016-07-20T00:00:50Z</time>
+	</wpt>
+	
+	<wpt lat="30.039475" lon="31.217622">
+		<time>2016-07-20T00:00:55Z</time>
+	</wpt>
+	
+	<wpt lat="30.039475" lon="31.217622">
+		<time>2016-07-20T00:01:00Z</time>
+	</wpt>
+	
+	<wpt lat="30.039809" lon="31.219607">
+		<time>2016-07-20T00:01:05Z</time>
+	</wpt>
+	
+	<wpt lat="30.039851" lon="31.219891">
+		<time>2016-07-20T00:01:10Z</time>
+	</wpt>
+	
+	<wpt lat="30.040144" lon="31.219864">
+		<time>2016-07-20T00:01:15Z</time>
+	</wpt>
+	
+	<wpt lat="30.040232" lon="31.219548">
+		<time>2016-07-20T00:01:20Z</time>
+	</wpt>
+	
+	<wpt lat="30.040051" lon="31.219076">
+		<time>2016-07-20T00:01:25Z</time>
+	</wpt>
+	
+	<wpt lat="30.039582" lon="31.216874">
+		<time>2016-07-20T00:01:30Z</time>
+	</wpt>
+	
+	<wpt lat="30.039582" lon="31.216874">
+		<time>2016-07-20T00:01:35Z</time>
+	</wpt>
+	
+	<wpt lat="30.038328" lon="31.211541">
+		<time>2016-07-20T00:01:40Z</time>
+	</wpt>
+	
+	<wpt lat="30.037548" lon="31.207808">
+		<time>2016-07-20T00:01:45Z</time>
+	</wpt>
+	
+	<wpt lat="30.036944" lon="31.205072">
+		<time>2016-07-20T00:01:50Z</time>
+	</wpt>
+	
+	<wpt lat="30.036294" lon="31.201960">
+		<time>2016-07-20T00:01:55Z</time>
+	</wpt>
+	
+	<wpt lat="30.035843" lon="31.200134">
+		<time>2016-07-20T00:02:00Z</time>
+	</wpt>
+</gpx>

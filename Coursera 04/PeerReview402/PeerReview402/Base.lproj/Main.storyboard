@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-AZ-zxM">
+                                <rect key="frame" x="205" y="156" width="30" height="30"/>
+                                <state key="normal" title="One"/>
+                                <connections>
+                                    <action selector="drumOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oHo-f6-fWC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00R-iK-9Oy">
+                                <rect key="frame" x="365" y="156" width="30" height="30"/>
+                                <state key="normal" title="Two"/>
+                                <connections>
+                                    <action selector="drumTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="635-tv-Gcd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCN-30-A04">
+                                <rect key="frame" x="200" y="285" width="40" height="30"/>
+                                <state key="normal" title="Three"/>
+                                <connections>
+                                    <action selector="drumThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qdy-jk-xoB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3P-Vj-TEf">
+                                <rect key="frame" x="365" y="285" width="31" height="30"/>
+                                <state key="normal" title="Four"/>
+                                <connections>
+                                    <action selector="drumFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0p1-1R-8Nj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM4-SG-3jN">
+                                <rect key="frame" x="205" y="413" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JhH-zN-z55"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plx-q0-Cpu">
+                                <rect key="frame" x="364" y="413" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4b4-vV-8Pu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Plx-q0-Cpu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="7WB-yU-j3F"/>
+                            <constraint firstItem="HCN-30-A04" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7dn-w1-Mc5"/>
+                            <constraint firstItem="C3P-Vj-TEf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IhO-sS-6Zv"/>
+                            <constraint firstItem="C3P-Vj-TEf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="Ue8-oY-rZt"/>
+                            <constraint firstItem="HCN-30-A04" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="Yo4-on-W75"/>
+                            <constraint firstItem="HCN-30-A04" firstAttribute="top" secondItem="hSh-AZ-zxM" secondAttribute="bottom" constant="99" id="Z7Q-ZF-eFM"/>
+                            <constraint firstItem="hSh-AZ-zxM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="cfg-oD-IFe"/>
+                            <constraint firstItem="00R-iK-9Oy" firstAttribute="centerY" secondItem="hSh-AZ-zxM" secondAttribute="centerY" id="hkJ-rx-NOu"/>
+                            <constraint firstItem="Plx-q0-Cpu" firstAttribute="centerY" secondItem="OM4-SG-3jN" secondAttribute="centerY" id="m0D-EU-ICm"/>
+                            <constraint firstItem="00R-iK-9Oy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="80" id="n0D-HL-VF9"/>
+                            <constraint firstItem="OM4-SG-3jN" firstAttribute="top" secondItem="HCN-30-A04" secondAttribute="bottom" constant="98" id="noQ-8I-ZwO"/>
+                            <constraint firstItem="OM4-SG-3jN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-80" id="vl6-fD-uB4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drumFourBtn" destination="C3P-Vj-TEf" id="1L4-5R-uDw"/>
+                        <outlet property="drumOneBtn" destination="hSh-AZ-zxM" id="Wm7-dO-NWD"/>
+                        <outlet property="drumThreeBtn" destination="HCN-30-A04" id="SuK-lu-Lzg"/>
+                        <outlet property="drumTwoBtn" destination="00R-iK-9Oy" id="qRI-sv-rP3"/>
+                        <outlet property="playBtn" destination="OM4-SG-3jN" id="nvv-6r-AsG"/>
+                        <outlet property="stopBtn" destination="Plx-q0-Cpu" id="uQl-Uv-Y5J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="246"/>
+        </scene>
+    </scenes>
+</document>
