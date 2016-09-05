@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZm-14-5jP">
+                                <rect key="frame" x="20" y="20" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="iYV-W5-F9q"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryc-hG-lry">
+                                <rect key="frame" x="28" y="58" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="JgO-GI-utl"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDq-D4-z3p"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="O1k-Ez-5Yg">
+                                <rect key="frame" x="66" y="58" width="514" height="29"/>
+                                <segments>
+                                    <segment title="@ First"/>
+                                    <segment title="@ Last"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gfn-Ca-gek">
+                                <rect key="frame" x="5" y="130" width="590" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_id" id="eTX-dd-mVo" customClass="CustomTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="590" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eTX-dd-mVo" id="Cai-qv-BW1">
+                                            <rect key="frame" x="0.0" y="0.0" width="590" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nt2-3p-OoX">
+                                                    <rect key="frame" x="8" y="8" width="574" height="27"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nt2-3p-OoX" firstAttribute="leading" secondItem="Cai-qv-BW1" secondAttribute="leadingMargin" id="BPP-Kz-Fxz"/>
+                                                <constraint firstItem="nt2-3p-OoX" firstAttribute="top" secondItem="Cai-qv-BW1" secondAttribute="topMargin" id="iTA-ap-9wb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nt2-3p-OoX" secondAttribute="trailing" id="tFT-0i-NmE"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nt2-3p-OoX" secondAttribute="bottom" id="uOR-BK-cuD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="nt2-3p-OoX" id="cyz-9D-Atg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ryh-MD-91e"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0BK-tc-7a7"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYa-O3-wB9">
+                                <rect key="frame" x="28" y="94" width="30" height="30"/>
+                                <state key="normal" title="Sort"/>
+                                <connections>
+                                    <action selector="sortTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foD-nI-sed"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KCe-d0-VUf">
+                                <rect key="frame" x="66" y="94" width="514" height="29"/>
+                                <segments>
+                                    <segment title="Ascending"/>
+                                    <segment title="Decending"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zYa-O3-wB9" firstAttribute="width" secondItem="ryc-hG-lry" secondAttribute="width" id="19n-lC-6gi"/>
+                            <constraint firstItem="ryc-hG-lry" firstAttribute="top" secondItem="SZm-14-5jP" secondAttribute="bottom" constant="8" id="8vo-0M-2y6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gfn-Ca-gek" secondAttribute="trailing" constant="-15" id="Cf2-wL-Es6"/>
+                            <constraint firstItem="KCe-d0-VUf" firstAttribute="top" secondItem="O1k-Ez-5Yg" secondAttribute="bottom" constant="8" id="F12-f7-XJ4"/>
+                            <constraint firstItem="ryc-hG-lry" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="FTP-2g-pbB"/>
+                            <constraint firstItem="zYa-O3-wB9" firstAttribute="top" secondItem="ryc-hG-lry" secondAttribute="bottom" constant="6" id="KZN-bf-r0O"/>
+                            <constraint firstItem="SZm-14-5jP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KfZ-zU-bPY"/>
+                            <constraint firstItem="KCe-d0-VUf" firstAttribute="leading" secondItem="zYa-O3-wB9" secondAttribute="trailing" constant="8" id="S80-hR-tgI"/>
+                            <constraint firstItem="gfn-Ca-gek" firstAttribute="top" secondItem="zYa-O3-wB9" secondAttribute="bottom" constant="6" id="bul-vm-8nS"/>
+                            <constraint firstItem="O1k-Ez-5Yg" firstAttribute="top" secondItem="SZm-14-5jP" secondAttribute="bottom" constant="8" id="fFk-VE-eNM"/>
+                            <constraint firstItem="zYa-O3-wB9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="l6z-Km-mRy"/>
+                            <constraint firstItem="gfn-Ca-gek" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-15" id="mwp-km-GB1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gfn-Ca-gek" secondAttribute="bottom" id="n9l-bx-015"/>
+                            <constraint firstItem="O1k-Ez-5Yg" firstAttribute="leading" secondItem="ryc-hG-lry" secondAttribute="trailing" constant="8" id="pk9-Md-0fB"/>
+                            <constraint firstItem="KCe-d0-VUf" firstAttribute="trailing" secondItem="O1k-Ez-5Yg" secondAttribute="trailing" id="rl2-xk-lvf"/>
+                            <constraint firstItem="O1k-Ez-5Yg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wDN-71-bp6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SZm-14-5jP" secondAttribute="trailing" id="wDb-3C-5YN"/>
+                            <constraint firstItem="SZm-14-5jP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xUS-aC-2xS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addSegmentedControl" destination="O1k-Ez-5Yg" id="tDR-PK-D3M"/>
+                        <outlet property="sortSegmentedControl" destination="KCe-d0-VUf" id="bHv-uo-NO7"/>
+                        <outlet property="tableView" destination="gfn-Ca-gek" id="iNX-bQ-aLt"/>
+                        <outlet property="textField" destination="SZm-14-5jP" id="eh3-TN-cui"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="321"/>
+        </scene>
+    </scenes>
+</document>

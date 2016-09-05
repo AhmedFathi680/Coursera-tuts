@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pdQ-Qa-osq">
+                                <rect key="frame" x="20" y="69" width="280" height="153"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="LKw-ho-G4s"/>
+                                </constraints>
+                                <string key="text">TwitterShareTwitterShareTwitterShareTwitterShareTwitterShareTwitterShareTwitterShareTwitterShareTwitterShareTwitterShareTwitterShare</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GCD-ZO-3lz">
+                                <rect key="frame" x="20" y="239" width="280" height="153"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="mod-JF-oiP"/>
+                                </constraints>
+                                <string key="text">FacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPostFacebookPost</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lV3-vX-nlq">
+                                <rect key="frame" x="20" y="407" width="280" height="153"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="HHa-JG-R09"/>
+                                </constraints>
+                                <string key="text">MoreActivitiesMoreActivitiesMoreActivitiesMoreActivitiesMoreActivitiesMoreActivitiesMoreActivitiesMoreActivitiesMoreActivitiesMoreActivitiesMoreActivitiesMoreActivitiesMoreActivities</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ARu-gl-hwG">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="gjC-Vy-sOG">
+                                        <connections>
+                                            <action selector="twitterShareTapped:" destination="BYZ-38-t0r" id="bCe-i5-wQw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="U6W-Co-9a7">
+                                        <connections>
+                                            <action selector="facebookShareTapped:" destination="BYZ-38-t0r" id="iZH-ER-kJ2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="bHY-5E-N65">
+                                        <connections>
+                                            <action selector="moreActivitiesTapped:" destination="BYZ-38-t0r" id="PeN-OX-VgE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="Tu8-9f-pHR">
+                                        <connections>
+                                            <action selector="dummyTapped:" destination="BYZ-38-t0r" id="d7O-vL-KTi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lV3-vX-nlq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="44y-dB-gaz"/>
+                            <constraint firstItem="pdQ-Qa-osq" firstAttribute="top" secondItem="ARu-gl-hwG" secondAttribute="bottom" id="CoQ-9g-fuR" userLabel="Twitter Text View.top = Toolbar.bottom + 5"/>
+                            <constraint firstItem="ARu-gl-hwG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HJc-az-OF2"/>
+                            <constraint firstItem="pdQ-Qa-osq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="K7S-5Y-VcN"/>
+                            <constraint firstItem="ARu-gl-hwG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="SBM-fY-PIT"/>
+                            <constraint firstItem="GCD-ZO-3lz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TvX-sh-VDu"/>
+                            <constraint firstItem="lV3-vX-nlq" firstAttribute="top" secondItem="GCD-ZO-3lz" secondAttribute="bottom" constant="17" id="h8c-bd-eyq"/>
+                            <constraint firstItem="GCD-ZO-3lz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hOm-dF-E5F"/>
+                            <constraint firstItem="GCD-ZO-3lz" firstAttribute="top" secondItem="pdQ-Qa-osq" secondAttribute="bottom" constant="17" id="kcI-j5-3pR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ARu-gl-hwG" secondAttribute="trailing" constant="-20" id="q2I-sR-Ega"/>
+                            <constraint firstItem="pdQ-Qa-osq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="udo-4G-Fx5"/>
+                            <constraint firstItem="lV3-vX-nlq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vmS-en-8Pa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookTextView" destination="GCD-ZO-3lz" id="r24-bs-U7I"/>
+                        <outlet property="moreActivitiesTextView" destination="lV3-vX-nlq" id="E6R-Dh-EAC"/>
+                        <outlet property="twitterTextView" destination="pdQ-Qa-osq" id="OGt-pj-mZV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="618"/>
+        </scene>
+    </scenes>
+</document>
