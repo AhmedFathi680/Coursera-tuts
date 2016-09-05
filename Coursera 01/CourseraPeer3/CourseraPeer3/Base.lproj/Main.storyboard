@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter amount in US dollars" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r47-kU-RBk">
+                                <rect key="frame" x="30" y="126" width="260" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lJz-vi-U9e">
+                                <rect key="frame" x="16" y="223" width="288" height="29"/>
+                                <segments>
+                                    <segment title="EURO"/>
+                                    <segment title="YEN"/>
+                                    <segment title="GBP"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldw-ke-Sk9">
+                                <rect key="frame" x="143" y="273" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTt-tp-8Se">
+                                <rect key="frame" x="85" y="172" width="150" height="31"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <state key="normal" title="CONVERT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cV4-Dq-MhF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lJz-vi-U9e" firstAttribute="centerX" secondItem="ldw-ke-Sk9" secondAttribute="centerX" id="BKO-vk-RLc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lJz-vi-U9e" secondAttribute="leading" id="BZN-qh-1oe"/>
+                            <constraint firstItem="ldw-ke-Sk9" firstAttribute="top" secondItem="lJz-vi-U9e" secondAttribute="bottom" constant="22" id="DBf-RV-DTm"/>
+                            <constraint firstItem="r47-kU-RBk" firstAttribute="width" secondItem="lJz-vi-U9e" secondAttribute="height" multiplier="65:7" id="EJo-MP-EFW"/>
+                            <constraint firstItem="jTt-tp-8Se" firstAttribute="width" secondItem="lJz-vi-U9e" secondAttribute="height" multiplier="75:14" id="IQq-Nu-chu"/>
+                            <constraint firstItem="ldw-ke-Sk9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mo3-SP-9eU"/>
+                            <constraint firstItem="r47-kU-RBk" firstAttribute="centerX" secondItem="ldw-ke-Sk9" secondAttribute="centerX" id="WXs-4x-Rb7"/>
+                            <constraint firstItem="jTt-tp-8Se" firstAttribute="centerX" secondItem="ldw-ke-Sk9" secondAttribute="centerX" id="YJO-ac-QoM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lJz-vi-U9e" secondAttribute="trailing" id="aac-fd-JV6"/>
+                            <constraint firstItem="ldw-ke-Sk9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kPp-NX-J8g"/>
+                            <constraint firstItem="ldw-ke-Sk9" firstAttribute="top" secondItem="jTt-tp-8Se" secondAttribute="bottom" constant="70" id="x4O-c2-zih"/>
+                            <constraint firstItem="ldw-ke-Sk9" firstAttribute="top" secondItem="r47-kU-RBk" secondAttribute="bottom" constant="117" id="yBM-Ys-FEa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="convertBtn" destination="jTt-tp-8Se" id="cTQ-Yk-gFz"/>
+                        <outlet property="inputTF" destination="r47-kU-RBk" id="UVF-fK-LtH"/>
+                        <outlet property="resultLbl" destination="ldw-ke-Sk9" id="anC-4U-pHw"/>
+                        <outlet property="segmentedControl" destination="lJz-vi-U9e" id="W2J-nt-Dpi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="511"/>
+        </scene>
+    </scenes>
+</document>
