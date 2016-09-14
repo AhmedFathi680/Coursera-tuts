@@ -1,2 +1,2 @@
-Course 1
+COURSE 1
 #Foundations of Objective-C App Development
