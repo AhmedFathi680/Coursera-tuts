@@ -1,2 +1,3 @@
 #Coursera 103
-Currentcy Request "CocoaPods"
+Currency Request App "CocoaPods"
+Which converts currencies online using CocoaPods library
