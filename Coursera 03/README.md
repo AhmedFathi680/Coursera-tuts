@@ -1,6 +1,7 @@
 COURSE 3
 #Best Practices for iOS User Interface Design
 University of California, Irvine
+
 https://www.coursera.org/learn/ui
 
 # About this Course:
