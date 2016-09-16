@@ -1,5 +1,4 @@
 #Coursera 202
-Dealing with Instagram API.
 
 - Understand the security basics (AppTransportSecurity)
 - Understand OAuth2.0
