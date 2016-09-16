@@ -10,6 +10,6 @@ Recap project of almost all I have learned through the past three courses.
 - Use autolayout and constraints to build an interface for any device.
 - Implement multiple views, tableViews, labels, textFields, textViews, DatePicker.
 - Populate the table from data model using coreData.
+- Save, delete and manpulate data using coreData.
 - Use dateFormatter to formate the data.
 - Sort data in table with animation.
-- Save, delete and manpulate data using coreData.
